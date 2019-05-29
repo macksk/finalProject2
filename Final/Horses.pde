@@ -9,13 +9,15 @@ public class Horses
   //private String horse;
   private String s;
   private int distance;
+  int x=50;
+  int y=50;
   
 
 
 
-  public Horses (int x)
+  public Horses (int m)
   {
-    horseRow=x;
+    horseRow=m;
   }
   public void horseShape(int x, int y)
   {
@@ -26,15 +28,14 @@ public class Horses
   {
     do 
     {
-      for (int i=0; i<horse.length; i++)
-      {
         double num=Math.random()*2;
         if (num>1)
         {
+          x+=5;
+          this.horseShape(x,y);
         }
-      }
       
-      }while (distance>400);
+      }while (x>900);
   }
       void keyPressed()
     {
