@@ -8,7 +8,6 @@ public class Horses
   private String bet="";
   //private String horse;
   private String s;
-  private int distance;
   int x=50;
   int y=50;
   
@@ -31,10 +30,11 @@ public class Horses
         double num=Math.random()*2;
         if (num>1)
         {
-          this.horseShape(x,y+5);
+          x+=5;
+          this.horseShape(x,y);
         }
       
-      }while (distance>400);
+      }while (x>900);
   }
       void keyPressed()
     {

@@ -17,7 +17,7 @@ void draw()
   {
     horse[i].horseShape(x,y);
     y+=100;
-    
+    horse[i].Move();
    text("Type in your bet for this horse:", 100, 35, 160);
    keyPressed();
   }
