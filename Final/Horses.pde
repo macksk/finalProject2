@@ -60,14 +60,24 @@ public class Horses
       
       }while (x>900||x2>900||x3>900||x4>900);
       
-      if(x>x2&&x>x3&&x>x4)
-      text("The winner is horse #1",200,35,160);
-      if(x2>x&&x2>x3&&x2>x4)
-      text("The winner is horse #2",200,35,160);
-      if(x3>x&&x3>x2&&x3>x4)
-      text("The winner is horse #3",200,35,160);
-      if(x4>x&&x4>x2&&x4>x3)
-      text("The winner is horse #4",200,35,160);
+      
+      if(x>=900)
+      text("The winner is horse #1",200,25,160);
+      if(x2>=900)
+      text("The winner is horse #2",200,25,160);
+      if(x3>=900)
+      text("The winner is horse #3",200,25,160);
+      if(x4>=900)
+      text("The winner is horse #4",200,25,160);
+      
+      //if(x>x2&&x>x3&&x>x4)
+      //text("The winner is horse #1",200,25,160);
+      //if(x2>x&&x2>x3&&x2>x4)
+      //text("The winner is horse #2",200,25,160);
+      //if(x3>x&&x3>x2&&x3>x4)
+      //text("The winner is horse #3",200,25,160);
+      //if(x4>x&&x4>x2&&x4>x3)
+      //text("The winner is horse #4",200,25,160);
       
   }
   void keyPressed()
