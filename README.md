@@ -2,45 +2,29 @@
 
 # Project Title and purpose
 
-One Paragraph of project description goes here
+The horses race against eachother and there in a winner. It returns the horse that wins. Each time it is random.
 
 ### Difficulties or opportunities you encountered along the way.
 
-The toughest part was...
+I couldn't figure out how to do key press. It doesn't take a bet or anything but it is fine. Also, I am not an artist so the horses are gray blobs.
 
 ### Most interesting piece of your code and explanation for what it does.
+double num2=Math.random()*2;
+        if (num2>1)
+        {
+          x2+=5;
+          this.horseShape(x2,y2);
+        }
 
-```Java
-void keyPressed() {
-if (keyCode == LEFT) {
-   tree= tree.getLeft();
-   System.out.println(tree.getValue());
-   String s=(String)tree.getValue();
-   fill(155);
-   textSize(50);
-} else if (keyCode == RIGHT) {
-   tree = tree.getRight();
-   System.out.println(tree.getValue());
-   String s=(String)tree.getValue();
-   fill(155);
-   textSize(50);
-} else if (tree.getLeft()==null&&tree.getRight()==null) {
-   System.out.println(tree.getValue());
-   tree=t.returnTree();
-}
-}
-```
-This is the code that moves down the tree as decisions are made. It gets each value from both left and right and also casts the value to a String. If the progressions arrives at the leaf nodes, those values are printed.
+This is the code that moves the horses. This is just for one. It calls the method that draws and positions the horses to animate them across the screen.
 ## Built With
 
 * [Processing](https://processing.org/) - The IDE used
 
 ## Authors
 
-* **Billie Thompson** 
+* **Skylar Mack** 
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Wallin uses this idea in the computer programming class but I didn't look at that old code.
